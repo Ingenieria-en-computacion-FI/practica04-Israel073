@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Ejercicio 1 */
+
 Nodo* crearNodo(int valor){
     Nodo* n = malloc(sizeof(Nodo));
     if(!n) return NULL;
@@ -11,7 +11,6 @@ Nodo* crearNodo(int valor){
     return n;
 }
 
-/* Ejercicio 2 */
 Nodo* crearArregloNodos(int n){
     Nodo* a = calloc(n, sizeof(Nodo));
     if(!a) return NULL;
@@ -19,7 +18,7 @@ Nodo* crearArregloNodos(int n){
     return a;
 }
 
-/* Ejercicio 3 */
+
 Nodo* agregarNodo(Nodo* arreglo, int* n, int valor){
     Nodo* t = realloc(arreglo, (*n + 1) * sizeof(Nodo));
     if(!t) return arreglo;
@@ -30,13 +29,12 @@ Nodo* agregarNodo(Nodo* arreglo, int* n, int valor){
     return arreglo;
 }
 
-/* Ejercicio 4 */
+
 void liberarNodos(Nodo* arreglo, int n){
     free(arreglo);
 }
 
-/* Ejercicio 5 */
-Nodo* construirTresNodos(){
+do* construirTresNodos(){
     Nodo* a = crearNodo(10);
     Nodo* b = crearNodo(20);
     Nodo* c = crearNodo(30);
@@ -45,7 +43,7 @@ Nodo* construirTresNodos(){
     return a;
 }
 
-/* Ejercicio 6 */
+
 int contarNodos(Nodo* inicio){
     int c = 0;
     while(inicio){
@@ -55,7 +53,7 @@ int contarNodos(Nodo* inicio){
     return c;
 }
 
-/* Ejercicio 7 */
+
 Nodo* crearNodosPorEntrada(){
     int v;
     Nodo *inicio=NULL, *act=NULL;
